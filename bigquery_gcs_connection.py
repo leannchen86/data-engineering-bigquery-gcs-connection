@@ -2,7 +2,7 @@ import os
 import cloud_storage as gcs
 from google.cloud import bigquery
 
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'D:/channel_analytics/service_account_key.json'
+os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'your_service_account_key.json'
 client = bigquery.Client()
 dataset_id = 'lkdata'
 dataset_ref = bigquery.DatasetReference(client.project, dataset_id)
