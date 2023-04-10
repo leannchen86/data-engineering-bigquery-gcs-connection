@@ -9,8 +9,6 @@ dataset_ref = bigquery.DatasetReference(client.project, dataset_id)
 
 table_id_list = gcs.get_files_from_gcs()
 
-table_id_list.remove('p_channel_demographics_a1')
-
 for i in range(len(table_id_list)):
     table_originalId = table_id_list[i]
     table_id = f"{table_originalId}_gcs"
