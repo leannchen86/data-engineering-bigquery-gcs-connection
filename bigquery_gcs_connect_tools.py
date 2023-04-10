@@ -3,8 +3,8 @@ from google.cloud import storage, bigquery
 from io import StringIO
 import os
 # Set your credentials
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'D:/channel_analytics/service_account_key.json'
-bucket_name = "lkdatabase"
+os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'your_service_account_key.json'
+bucket_name = "your_bucket_name"
 # Create a storage client
 storage_client = storage.Client()
 bucket = storage_client.get_bucket(bucket_name) # Get the bucket object
