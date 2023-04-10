@@ -4,7 +4,7 @@ from google.cloud import bigquery
 
 os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'your_service_account_key.json'
 client = bigquery.Client()
-dataset_id = 'lkdata'
+dataset_id = 'your_dataset_id'
 dataset_ref = bigquery.DatasetReference(client.project, dataset_id)
 
 table_id_list = gcs.get_files_from_gcs()
